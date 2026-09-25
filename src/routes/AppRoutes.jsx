@@ -7,8 +7,9 @@ import Auth from '../pages/Auth';
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      {/* 👑 मुख्य लिंक खोलते ही सीधे डैशबोर्ड चमकेगा */}
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/auth" element={<Auth />} />
     </Routes>
   );
